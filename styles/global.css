@@ -29,6 +29,11 @@ a {
   color: inherit;
 }
 
+address {
+  font-size: 18px;
+  font-style: normal; 
+}
+
 img {
   width: 100%;
 }

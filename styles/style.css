@@ -1,1 +1,52 @@
-/* место для вашего кода */
+/* ________________HEADER________________ */
+
+.header {
+  margin: 92px 49px 0 51px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #FFF;
+  border: 1px solid black;
+}
+
+.header__menu-list {
+  display: flex;
+  gap: 27px;
+  font-size: 18px;
+}
+
+.header__menu-item {
+  list-style: circle;
+}
+
+.header__menu-item:nth-child(1) {
+  list-style-type: none;
+}
+
+.header__logo {
+  width: 148px;
+  height: 105px;
+  align-self: center;
+}
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  width: 240px;
+  font-size: 18px;
+  line-height: 24.3px;
+}
+
+/* ________________MAIN-COVER________________ */
+
+
+
+/* ________________MAIN-LOTS________________ */
+
+
+
+/* ________________MAIN-ABOUT________________ */
+
+
+
+/* ________________FOOTER________________ */
