@@ -1,1 +1,1 @@
-git@github.com:PIGEONauthor/ono-tebe-nado.git
+https://github.com/PIGEONauthor/ono-tebe-nado/tree/dev
