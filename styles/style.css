@@ -22,13 +22,14 @@
 
 .header__links-list-item:nth-child(1) {
   
-  /* решил убрать точку с помощью псевдоселлектора */
+  /* решил убрать точку с помощью псевдоселлектора
+     чтобы не создавать одтельный класс            */
   
   list-style-type: none;
 }
 
 .header__link_active .header__link {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .header__logo {
