@@ -1,5 +1,5 @@
 .page {
-  width: 1440px;
+  max-width: 1440px;
   margin: auto;
 }
 
@@ -14,11 +14,13 @@
 }
 
 .header__links-list {
-  justify-self: start;
+  padding: 0;
   display: flex;
-  gap: 27px;
+  gap: 31px;
+  justify-self: start;
   font-size: 18px;
   font-weight: 400;
+  line-height: normal;
 }
 
 .header__links-list-item {
@@ -33,8 +35,22 @@
   list-style-type: none;
 }
 
+.header__link {
+  text-decoration: none;
+  border-bottom: 1px solid;
+}
+
+.header__link:hover {
+  
+  /* теперь ссылки реагируют на 
+     наведение                  */
+
+  border-bottom: none;
+}
+
 .header__link_active {
   text-decoration: none;
+  border-bottom: none;
 }
 
 .header__logo {
@@ -52,6 +68,17 @@
   line-height: 24.3px;
 }
 
+.contacts a {
+  width: 133px;
+  text-decoration: none;
+  border-bottom: 1px solid;
+}
+
+.contacts a:hover {
+  border-bottom: none;
+  color: rgb(43, 57, 141);
+}
+
 .address {
   font-size: 18px;
   font-style: normal;
@@ -59,18 +86,12 @@
 
 /* ________________MAIN-COVER________________ */
 
-.main {
-  display: flex;
-  flex-direction: column;
-}
-
 .cover {
   position: relative;
   background-image: url(../images/cover.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   display: grid;
-  height: 763.939px;
 }
 
 .overlay {
@@ -86,7 +107,7 @@
 }
 
 .cover__title {
-  padding: 165px 50px 135px;
+  margin: 165px 50px 125px;
   color: #FFF;
   font-size: 100px;
   font-weight: 700;
@@ -97,17 +118,16 @@
 }
 
 .aligned-text {
-  display: inline-block;
+  display: block;
 }
 
 .letter-spacing-extended{
-  display: inline-block;
   letter-spacing: 60px;
 }
 
 .aligned-text_center {
-  display: inline-block;
-  border: 1px solid white;
+  display: block;
+  text-align: center;
 }
 
 .no-letter-spacing {
@@ -135,8 +155,7 @@
   line-height: 28px;
   font-weight: 400;
   text-transform: uppercase;
-  word-spacing: 20px;
-  align-self: center;
+  word-spacing: 18px;
 }
 
 .bet-button {
@@ -151,16 +170,25 @@
   line-height: normal;
   text-transform: uppercase;
   border: 1px solid #FFF;
+  transition: .6s;
+}
+
+/* захотелось немного выделить кнопу */
+
+.bet-button:hover {
+  background-color: black;
 }
 
 /* ________________MAIN-LOTS________________ */
 
 .lots {
-  margin: 180px 50px;
+  padding: 180px 50px;
 }
 
 .lots__heading {
-  margin-bottom: 27px;
+  display: block;
+  padding-left: 40px;
+  padding-bottom: 27px;
   font-size: 40px;
   font-weight: 700;
   text-transform: uppercase;
@@ -168,6 +196,7 @@
 
 .lots__card-list {
   display: flex;
+  width: 100%;
   gap: 25px;
   flex-wrap: wrap;
 }
@@ -175,7 +204,7 @@
 .lots__card-list-item {
   list-style-type: none;
   min-height: 450px;
-  width: 430px;
+  max-width: 430px;
   flex-grow: 1;
 }
 
@@ -234,6 +263,14 @@
   margin-left: 40px;
 }
 
+.lots__look-more-link:hover {
+  
+  /* теперь ссылка реагирует на 
+     наведение                  */
+  
+  text-decoration: none;
+}
+
 /* ________________MAIN-ABOUT________________ */
 
 .about {
@@ -286,10 +323,9 @@
 /* ________________FOOTER________________ */
 
 .footer {
-  margin: 0 50px 90px;
+  padding: 0 50px 90px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
 
 .footer__menu-list {
@@ -306,7 +342,15 @@
   list-style-type: none;
 }
 
-.footer__menu-link_active .footer__menu-link {
+.footer__menu-link_active {
+  text-decoration: none;
+}
+
+.footer__menu-link:hover {
+  
+  /* теперь ссылки реагируют на 
+     наведение                  */
+  
   text-decoration: none;
 }
 
@@ -319,4 +363,29 @@
   height: 48px;
   width: 48px;
   list-style-type: none;
+}
+
+/* иконци теперь реагируют на наведение */
+
+.footer__social-icon {
+  border-radius: 50%;
+  transition: .5s;
+}
+
+.footer__social-icon.yt:hover {
+  border-radius: 50%;
+  background-color: red;
+  transform: scale(1.2);
+}
+
+.footer__social-icon.vk:hover {
+  border-radius: 50%;
+  background-color: rgb(84, 84, 231);
+  transform: scale(1.2);
+}
+
+.footer__social-icon.pinterest:hover {
+  border-radius: 50%;
+  background-color: coral;
+  transform: scale(1.2);
 }
