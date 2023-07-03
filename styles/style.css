@@ -1,3 +1,8 @@
+.page {
+  width: 1440px;
+  margin: auto;
+}
+
 /* ________________HEADER________________ */
 
 .header {
@@ -28,7 +33,7 @@
   list-style-type: none;
 }
 
-.header__link_active .header__link {
+.header__link_active {
   text-decoration: none;
 }
 
@@ -65,6 +70,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   display: grid;
+  height: 763.939px;
 }
 
 .overlay {
@@ -80,34 +86,37 @@
 }
 
 .cover__title {
-  margin: 165px 50px 135px;
+  padding: 165px 50px 135px;
   color: #FFF;
   font-size: 100px;
   font-weight: 700;
-  line-height: 115%;
+  line-height: 125px;
   letter-spacing: 30px;
   text-transform: uppercase;
   z-index: 2;
 }
 
 .aligned-text {
-  display: block;
-  margin-bottom: 20px;
+  display: inline-block;
+}
+
+.letter-spacing-extended{
+  display: inline-block;
+  letter-spacing: 60px;
 }
 
 .aligned-text_center {
-  display: block;
-  text-align: center;
-  margin-bottom: 20px;
+  display: inline-block;
+  border: 1px solid white;
+}
+
+.no-letter-spacing {
+  letter-spacing: 0;
 }
 
 .aligned-text_right {
   display: block;
   text-align: end;
-}
-
-.letter-spacing-extended {
-  letter-spacing: 60px;
 }
 
 .cover__description {
