@@ -1,16 +1,16 @@
-/*
+
 
 .page {
   max-width: 1440px;
   margin: auto;
 }
 
-*/
 
 /* ________________HEADER________________ */
 
 .header {
   margin: 92px 49px 92px 51px;
+  width: 100%;
   display: grid;
   align-items: center;
   grid-template-columns: repeat(3,1fr);
@@ -92,7 +92,7 @@
 
 .cover {
   position: relative;
-  top: 0;
+  width: 100%;
   background-image: url(../images/cover.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -189,6 +189,7 @@
 
 .lots {
   padding: 180px 50px;
+  width: 100%;
 }
 
 .lots__heading {
@@ -281,6 +282,7 @@
 
 .about {
   margin: 0 50px 180px;
+  width: 100%;
   display: grid;
   grid-template-columns: 430px auto;
   column-gap: 25px;
