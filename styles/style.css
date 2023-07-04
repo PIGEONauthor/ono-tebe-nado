@@ -1,8 +1,8 @@
 /* ________________HEADER________________ */
 
 .header {
-  padding: 92px 49px 92px 51px;
-  width: 100%;
+  padding: 92px 49px 90px 51px;
+  margin: 0;
   display: grid;
   align-items: center;
   grid-template-columns: repeat(3,1fr);
