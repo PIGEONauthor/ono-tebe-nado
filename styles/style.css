@@ -1,7 +1,11 @@
+
+
 .page {
   max-width: 1440px;
   margin: auto;
 }
+
+
 
 /* ________________HEADER________________ */
 
@@ -107,7 +111,7 @@
 }
 
 .cover__title {
-  margin: 165px 50px 125px;
+  margin: 165px 50px 125px 47px;
   color: #FFF;
   font-size: 100px;
   font-weight: 700;
@@ -121,22 +125,23 @@
   display: block;
 }
 
-.letter-spacing-extended{
+.letter-spacing-extended {
   letter-spacing: 60px;
 }
 
 .aligned-text_center {
-  display: block;
-  text-align: center;
-}
-
-.no-letter-spacing {
-  letter-spacing: 0;
+  display: inline-block;
+  padding-left: 34%;
 }
 
 .aligned-text_right {
-  display: block;
-  text-align: end;
+  display: inline-block;
+  padding-left: 69%;
+}
+
+.no-letter-spacing {
+  display: inline-block;
+  letter-spacing: 0;
 }
 
 .cover__description {
