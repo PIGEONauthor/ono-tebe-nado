@@ -1,16 +1,8 @@
-/*
-
-.page {
-  margin: auto;
-}
-
-*/
-
 /* ________________HEADER________________ */
 
 .header {
   padding: 92px 49px 92px 51px;
-  margin: auto;
+  width: 100%;
   display: grid;
   align-items: center;
   grid-template-columns: repeat(3,1fr);
