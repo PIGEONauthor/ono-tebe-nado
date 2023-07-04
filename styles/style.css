@@ -285,7 +285,7 @@
 .about {
   margin: 0 50px 180px;
   display: grid;
-  grid-template-columns: 430px auto;
+  grid-template-columns: 450px auto;
   column-gap: 25px;
 }
 
@@ -293,6 +293,7 @@
   display: flex;
   flex-direction: column;
   gap: 100px;
+  border: 1px solid;
 }
 
 .about__logo {
