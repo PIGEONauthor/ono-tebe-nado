@@ -1,7 +1,7 @@
 /* ________________HEADER________________ */
 
 .header {
-  padding: 92px 49px 90px 51px;
+  padding: 92px 49px 92px 51px;
   margin: 0;
   display: grid;
   align-items: center;
@@ -10,7 +10,6 @@
 }
 
 .header__links-list {
-  padding: 0;
   display: flex;
   gap: 31px;
   justify-self: start;
@@ -107,7 +106,7 @@
 }
 
 .cover__title {
-  margin: 165px 50px 135px 50px;
+  padding: 165px 50px 135px 50px;
   color: #FFF;
   font-size: 100px;
   font-weight: 700;
@@ -206,8 +205,8 @@
 .lots__card-list-item {
   list-style-type: none;
   min-height: 450px;
-  max-width: 430px;
   flex-grow: 1;
+  flex-basis: 430px;
 }
 
 .card-link {
@@ -246,6 +245,7 @@
   text-transform: uppercase;
   margin: 50px 40px auto;
   z-index: 2;
+  max-width: 430px;
 }
 
 .card__text {
@@ -254,6 +254,7 @@
   line-height: 120%;
   margin: auto 40px 50px;
   z-index: 2;
+  max-width: 430px;
 }
 
 .lots__look-more-link {
