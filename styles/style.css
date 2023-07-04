@@ -10,7 +10,7 @@
 /* ________________HEADER________________ */
 
 .header {
-  padding: 92px 49px 92px 51px;
+  margin: 92px 49px 92px 51px;
   display: grid;
   align-items: center;
   grid-template-columns: repeat(3,1fr);
@@ -92,6 +92,7 @@
 
 .cover {
   position: relative;
+  top: 0;
   background-image: url(../images/cover.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -148,7 +149,6 @@
   display: flex;
   align-items: center;
   gap: 78px;
-  max-width: 1440px;
   padding-bottom: 50px;
   padding-right: 50px;
   z-index: 2;
